@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active {
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+.active-menu {
+    color: #ff6600;
+}
+
+.hide {
+    top: -50px;
+}
+
+
+/** Icons */
+.icon {
+    font-size: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .3s;
+}
+
+.icon::after,
+.icon:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #111;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container h2 {
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container hr {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    background-color: #14213d;
+    margin-bottom: 10px;
+}
+
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/** Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    color: #0e0e0c;
+}
+
+h1>span {
+    font-weight: 300;
+    color: #0e0e0c;
+}
+
+nav {
+    margin: 1rem;
+}
+
+nav>a {
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0e0e0c;
+    transition: 0.5s ease-in-out;
+}
+
+nav>a:hover {
+    color: #ff6600;
+}
+
+.mobile {
+    display: none;
+}
+
+/** Home  */
+#home {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+#home h1 span {
+    color: #ff6600;
+    letter-spacing: 5px;
+}
+
+.hero {
+    width: 100vw;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2em;
+    padding-left: 4rem;
+    background: transparent;
+}
+
+.hero p {
+    font-size: 20px;
+    background: transparent;
+}
+
+
+.hero .btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    background: #111;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** projects  */
+.projects-content {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2em;
+}
+
+.project-type span {
+    margin: 0.3rem;
+    display: inline-block;
+    padding: 0.5rem .5rem;
+    border: 1px solid #111;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.project-type span:hover {
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project-card {
+    text-align: left;
+    padding: 1rem;
+    border: 2px dotted #111;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+.project-card:hover {
+    border: 2px solid #111;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.775);
+}
+
+.project-card h3 {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-description {
+    margin: 1rem 0;
+}
+
+.project-skills {
+    margin: 1rem 0;
+}
+
+.project-skills span {
+    margin: .3rem 0;
+    display: inline-block;
+    padding: .5rem;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+}
+
+.project-view {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-view .view-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 0.6rem 0;
+    color: #fff;
+    background: #111;
+    border: 2px solid #111;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.project-view .view-btn:hover {
+    cursor: pointer;
+    color: #111;
+    background: #fff;
+}
+
+/** Contact */
+#contact {
+    margin-top: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+#contact-form {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    max-width: 450px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem 0;
+    color: #111;
+    font-size: 1rem;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid #111;
+    transition: .1s ease-in;
+}
+
+.form-control:hover,
+.form-control::after {
+    outline: 2px solid #111;
+    border: none;
+}
+
+#send {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .3s ease-in;
+    outline: 1px solid #111;
+    background: #111;
+    color: #fff;
+}
+
+#send:hover {
+    cursor: pointer;
+}
+
+/** Footer */
+footer {
+    color: #111;
+    background: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p,
+footer a {
+    font-weight: 700;
+    color: #111;
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: .3s ease-in-out;
+}
+
+footer a {
+    color: #ff6600;
+}
+
+/** Media Queries  */
+@media screen and (max-width:750px) {
+    header {
+        padding: 1rem 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 5px;
+    }
+
+
+    .projects-content {
+        grid-template-columns: auto;
+    }
+
+    .mobile {
+        display: block;
+        position: fixed;
+        right: 0;
+        margin-right: .5rem;
+        top: 30%;
+        background: transparent;
+        border-radius: 50px;
+    }
+
+    .mobile-link {
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu {
+        color: #fff;
+        background: #ff6600;
+    }
+
+    .mobile-link a {
+        font-size: 25px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .mobile-link a:active {
+        color: #ff6600;
+    }
+
+    .mobile-link a:hover {
+        background: #ff6600;
+        color: #fff;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+}
