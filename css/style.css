@@ -30,7 +30,6 @@ a {
     top: -50px;
 }
 
-
 /** Icons */
 .icon {
     font-size: 30px;
@@ -150,7 +149,6 @@ nav>a:hover {
     background: transparent;
 }
 
-
 .hero .btn {
     width: 200px;
     height: 50px;
@@ -163,7 +161,6 @@ nav>a:hover {
     justify-content: center;
     align-items: center;
 }
-
 
 /** projects  */
 .projects-content {
@@ -335,7 +332,6 @@ footer a {
 footer a {
     color: #ff6600;
 }
-
 
 /** */
 .mobile {
