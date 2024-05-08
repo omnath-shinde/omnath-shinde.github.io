@@ -395,7 +395,7 @@ footer a {
     }
 }
 
-@media screen and (min-width:1050px) {
+@media screen and (min-width:1200px) {
     .mobile {
         margin-right: 3em;
     }
